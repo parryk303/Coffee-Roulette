@@ -31,7 +31,7 @@ class App extends React.Component {
     axios.get('/drinks')
       .then(({ data }) => {
         this.setState(
-          { drinks: data },
+          { drinks: data.rows },
         );
       });
   }

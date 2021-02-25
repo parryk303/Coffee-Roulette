@@ -1,2 +1,2 @@
-web: webpack --config webpack.config.js --watch
+web: webpack -d --watch
 web: node server/index.js

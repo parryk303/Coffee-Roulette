@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.get('/drinks', function (req, res) {
-  client.query('SELECT * FROM drinks', (err, results) {
+  client.query('SELECT * FROM drinks', (err, results) => {
     if (err) {
       res.sendStatus(500);
     } else {

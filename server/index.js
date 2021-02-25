@@ -1,7 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const Drinks = require('../database-mongo/index.js');
-const Users = require('../database-mongo/index.js');
+const client = require('../database/pgConnect.js');
 const PORT = process.env.PORT || 3000;
 
 var app = express();
@@ -11,36 +10,36 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.get('/drinks', function (req, res) {
-  Drinks.selectAll(function(err, data) {
+  client.query('SELECT * FROM drinks', (err, results) {
     if (err) {
       res.sendStatus(500);
-    } else {
-      res.json(data);
-    }
-  });
-});
-
-app.get('/drinks/:index', (req, res) => {
-  const index = { index: Number(req.params.index) };
-  Drinks.selectDrink(index, (err, results) => {
-    if (err) {
-      res.send(err);
     } else {
       res.status(200).send(results);
     }
   });
 });
 
-app.post('/drinks', (req, res) => {
-  const data = req.body;
-  Users.registerUser(data, (err, results) => {
-    if (err) {
-      res.send(err);
-    } else {
-      res.status(200).send(data);
-    }
-  })
-});
+// app.get('/drinks/:index', (req, res) => {
+//   const index = { index: Number(req.params.index) };
+//   Drinks.selectDrink(index, (err, results) => {
+//     if (err) {
+//       res.send(err);
+//     } else {
+//       res.status(200).send(results);
+//     }
+//   });
+// });
+
+// app.post('/drinks', (req, res) => {
+//   const data = req.body;
+//   Users.registerUser(data, (err, results) => {
+//     if (err) {
+//       res.send(err);
+//     } else {
+//       res.status(200).send(data);
+//     }
+//   })
+// });
 
 app.listen(PORT, () => {
   console.log(`listening on port ${PORT}!`);

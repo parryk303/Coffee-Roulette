@@ -4,7 +4,7 @@
   "description": "Put a little pep in your morning! SPIN TO WIN!",
   "main": "index.js",
   "scripts": {
-    "build": "webpack -d --watch",
+    "react:dev": "webpack -d --watch",
     "start": "nodemon server/index.js",
     "seed": "node database-mongo/seed.js"
   },

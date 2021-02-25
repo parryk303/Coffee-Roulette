@@ -1,0 +1,42 @@
+{
+  "name": "coffee-roulette",
+  "version": "1.0.0",
+  "description": "Put a little pep in your morning! SPIN TO WIN!",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -d --watch",
+    "start": "nodemon server/index.js",
+    "seed": "node database-mongo/seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parryk303/Coffee-Roulette.git"
+  },
+  "author": "Kyle Parry",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/parryk303/Coffee-Roulette/issues"
+  },
+  "homepage": "https://github.com/parryk303/Coffee-Roulette#readme",
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.17.2",
+    "bootstrap": "^4.6.0",
+    "express": "^4.15.0",
+    "jquery": "^3.1.1",
+    "mongoose": "^4.8.6",
+    "nodemon": "^2.0.7",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.4.3",
+    "react-credit-cards": "^0.8.3",
+    "react-custom-roulette": "^1.1.5",
+    "react-dom": "^16.0.1"
+  }
+}

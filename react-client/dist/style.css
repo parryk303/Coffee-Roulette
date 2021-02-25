@@ -1,0 +1,154 @@
+
+body {
+  background-color: #F8F9FA;
+  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+}
+
+#wheel {
+  background-image: url("images/coffee.jpg");
+  background-size: cover;
+  object-fit: contain;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+  border-width: 1%;
+  border-radius: 5px;
+  box-shadow: 5px 4px 4px 5px hsl(0, 3%, 7%);
+  padding: 2%;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+}
+
+#mainTitle {
+  font-family: 'Sancreek', cursive;
+  font-size: 80px;
+  justify-content: center;
+}
+
+#nav {
+  height: 3%;
+  width: 102%;
+  box-shadow: 3px 6px 6px hsl(0, 3%, 7%);
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+#spinButton:hover {
+  color: #1B8000;
+  background: url('https://media2.giphy.com/media/5T06ftQWtCMy0XFaaI/giphy.gif?cid=ecf05e477zkdrziox2iv20jww2ryegaownh6j6rxoi9hlox6&rid=giphy.gif');
+  box-shadow: 3px 2px 2px hsl(0, 3%, 7%);
+  border-color: hsl(0, 3%, 7%);;
+}
+
+#spinButton {
+  display: inline;
+  color: red;
+  background-color: hsl(0, 3%, 7%);
+  border: solid;
+  font-family: 'Bungee Shade', cursive;
+  font-size: 50px;
+  width: 95%;
+  border-width: 0.05%;
+  border-radius: 20px;
+  box-shadow: 3px 2px 2px hsl(0, 3%, 7%);
+}
+
+#logo {
+  object-fit:contain;
+  width: 20%;
+  margin: 1%;
+}
+
+#cup {
+  border: solid;
+  border-color: black;
+  box-shadow: 3px 2px 2px black;
+  margin: 10px;
+}
+
+#list {
+  display: flex;
+  width: 85%;
+  justify-content: center;
+  border: solid;
+  border-color: black;
+  padding: 2%;
+  margin: 5%;
+  background-image: url('./images/wood.jpg');
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 5px 4px 4px 5px hsl(0, 3%, 7%);
+}
+
+.card {
+  border: thin;
+  border-color: lightgray;
+  box-shadow: 3px 5px 5px black;
+  width: 95%;
+  cursor: pointer;
+  border-radius: 15px;
+  font-family: 'IM Fell English', serif;
+  font-size: 50px;
+  align-items: center;
+}
+
+#won {
+  color: green;
+}
+.card-title {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 60px;
+  font-weight: 300;
+  text-align: center;
+}
+.card-text {
+  padding: 1%;
+}
+.list-group-item {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 50px;
+  margin: 1%;
+}
+
+.list-group {
+  list-style-type: none;
+}
+
+#registerButton:hover {
+  color: #1B8000;
+  background: url('https://media2.giphy.com/media/5T06ftQWtCMy0XFaaI/giphy.gif?cid=ecf05e477zkdrziox2iv20jww2ryegaownh6j6rxoi9hlox6&rid=giphy.gif');
+  box-shadow: 3px 2px 2px hsl(0, 3%, 7%);
+  border-color: hsl(0, 3%, 7%);;
+}
+
+#registerButton {
+  color:Gold;
+  background-color: hsl(0, 3%, 7%);
+  border: solid;
+  font-family: 'Bungee Shade', cursive;
+  font-size: 50px;
+  height: 120px;
+  border-width: 0.05%;
+  border-radius: 20px;
+  margin-left: 100px;
+  display: inline;
+}
+
+#registrationForm {
+  font-family: 'Bungee Shade', cursive;
+  margin: 5%;
+  width:90%;
+  font-size: 60px;
+}
+
+#name, #email, #password {
+  font-family: 'IM Fell English', serif;
+  font-size: 30px;
+}

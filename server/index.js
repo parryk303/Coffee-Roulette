@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3000;
 
 var app = express();
 
-app.use(express.static(__dirname + '/../react-client/dist'));
+app.use(express.static(__dirname + '/../client/dist'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 

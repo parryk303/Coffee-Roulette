@@ -1,9 +1,7 @@
 # Coffee-Roulette
 Put a little pep in your morning! SPIN TO WIN!
 
-## Heading ##
-  > ☕ Coffee Roulette ☕
-## Sub-Heading ##
+## ☕ Coffee Roulette ☕ ##
   > Built for coffee enthusiasts looking to broaden their horizons and for coffee shops to show the range of their products.
 
 ## Summary ##
@@ -15,8 +13,7 @@ Put a little pep in your morning! SPIN TO WIN!
 ## Solution ##
   > Coffee Roulette selects a random drink from the menu with a chance to be free. The excitement of the promotional drink and the random chance makes things exciting!
 
-## Quote from You ##
-  > Early morning spin for the win!
+## Early morning spin for the win! ##
 
 ## How to Get Started ##
   > Scan the QR code at your local coffee house and play!

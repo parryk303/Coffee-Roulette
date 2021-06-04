@@ -19,28 +19,6 @@ app.get('/drinks', function (req, res) {
   });
 });
 
-// app.get('/drinks/:index', (req, res) => {
-//   const index = { index: Number(req.params.index) };
-//   Drinks.selectDrink(index, (err, results) => {
-//     if (err) {
-//       res.send(err);
-//     } else {
-//       res.status(200).send(results);
-//     }
-//   });
-// });
-
-// app.post('/drinks', (req, res) => {
-//   const data = req.body;
-//   Users.registerUser(data, (err, results) => {
-//     if (err) {
-//       res.send(err);
-//     } else {
-//       res.status(200).send(data);
-//     }
-//   })
-// });
-
 app.listen(PORT, () => {
   console.log(`listening on port ${PORT}!`);
 });

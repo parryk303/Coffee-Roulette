@@ -52,7 +52,6 @@ class App extends React.Component {
         <div >
           <Nav handleRegister={this.handleRegister} />
           <div className='main'>
-            <Roulette updateWin={this.updateWin} />
             <Drinks winningDrink={this.state.drink} />
           </div>
         </div>
